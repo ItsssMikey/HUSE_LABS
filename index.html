@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Huse Labs </title>
+  <meta name="description" content="Personal consulting to turn ideas into shipped results." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row">
+      <a href="#" class="logo">Huse Labs</a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary">Book a call</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="gradient-text">Move fast, and break things</h1>
+        <p>I design, test, and build websites and mobile apps—fast, with real user feedback.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#services" class="btn">See services</a>
+        </div>
+      </div>
+    </section>
+
+
+   
+
+    <section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Design & Prototyping</h3>
+        <p>Low-friction, high-signal prototypes to explore ideas before you commit to code. I work primarily in Figma (and Canva for quick assets).</p>
+        <ul class="bullets">
+          <li>Wireframes, UI flows, clickable prototypes</li>
+          <li>Lightweight design systems (tokens, components)</li>
+          <li>Fast iteration with short feedback loops</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Validation & User Testing</h3>
+        <p>Test the riskiest assumptions early so we don’t overbuild. Practical research that fits your timeline and budget.</p>
+        <ul class="bullets">
+          <li>Lean research plan & interview/test scripts</li>
+          <li>5–10 user sessions (remote or in-person)</li>
+          <li>Findings summary with clear next steps</li>
+        </ul>
+      </article>
+
+       <article class="card">
+        <h3>Web & Mobile Apps</h3>
+        <p>Websites and store-ready apps with clean, accessible front-ends and clear handoff.</p>
+        <ul class="bullets">
+          <li>Landing pages, dashboards, MVPs (web & mobile)</li>
+          <li>App Store & Play assets + submission help</li>
+          <li>Responsive, a11y best practices • Deploy & docs</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About</h2>
+        <p>I help startups and SMBs
+    turn ideas into validated products—design, prototyping, and clean builds for the web and the app stores.
+    No buzzwords, just clear deliverables and steady communication.</p>
+
+     <p><strong>Next step:</strong> use the contact form or the “Book a call” button—tell me what you’re trying to achieve.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+       <p> · Based in Oslo, available remote.</p>
+        <form action="https://formspree.io/f/yourid" method="POST" class="contact-form">
+          <div class="grid">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="_replyto" placeholder="Email" required>
+          </div>
+          <textarea name="message" placeholder="How can I help?" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row">
+      <p>© <span id="year"></span> Huse Labs. All rights reserved.</p>
+      <div class="footer-nav" aria-label="Footer">
+        <a href="#privacy">Privacy</a>
+        <a href="#impressum">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
