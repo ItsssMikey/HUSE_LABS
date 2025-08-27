@@ -37,67 +37,82 @@
       </div>
     </section>
 
-
-   
-
     <section id="services" class="section">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Design & Prototyping</h3>
-        <p>Low-friction, high-signal prototypes to explore ideas before you commit to code. I work primarily in Figma (and Canva for quick assets).</p>
-        <ul class="bullets">
-          <li>Wireframes, UI flows, clickable prototypes</li>
-          <li>Lightweight design systems (tokens, components)</li>
-          <li>Fast iteration with short feedback loops</li>
-        </ul>
-      </article>
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Design & Prototyping</h3>
+            <p>Low-friction, high-signal prototypes to explore ideas before you commit to code. I work primarily in Figma (and Canva for quick assets).</p>
+            <ul class="bullets">
+              <li>Wireframes, UI flows, clickable prototypes</li>
+              <li>Lightweight design systems (tokens, components)</li>
+              <li>Fast iteration with short feedback loops</li>
+            </ul>
+          </article>
 
-      <article class="card">
-        <h3>Validation & User Testing</h3>
-        <p>Test the riskiest assumptions early so we don’t overbuild. Practical research that fits your timeline and budget.</p>
-        <ul class="bullets">
-          <li>Lean research plan & interview/test scripts</li>
-          <li>5–10 user sessions (remote or in-person)</li>
-          <li>Findings summary with clear next steps</li>
-        </ul>
-      </article>
+          <article class="card">
+            <h3>Validation & User Testing</h3>
+            <p>Test the riskiest assumptions early so we don’t overbuild. Practical research that fits your timeline and budget.</p>
+            <ul class="bullets">
+              <li>Lean research plan & interview/test scripts</li>
+              <li>5–10 user sessions (remote or in-person)</li>
+              <li>Findings summary with clear next steps</li>
+            </ul>
+          </article>
 
-       <article class="card">
-        <h3>Web & Mobile Apps</h3>
-        <p>Websites and store-ready apps with clean, accessible front-ends and clear handoff.</p>
-        <ul class="bullets">
-          <li>Landing pages, dashboards, MVPs (web & mobile)</li>
-          <li>App Store & Play assets + submission help</li>
-          <li>Responsive, a11y best practices • Deploy & docs</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+          <article class="card">
+            <h3>Web & Mobile Apps</h3>
+            <p>Websites and store-ready apps with clean, accessible front-ends and clear handoff.</p>
+            <ul class="bullets">
+              <li>Landing pages, dashboards, MVPs (web & mobile)</li>
+              <li>App Store & Play assets + submission help</li>
+              <li>Responsive, a11y best practices • Deploy & docs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="about" class="section alt">
       <div class="container">
         <h2>About</h2>
         <p>I help startups and SMBs
-    turn ideas into validated products—design, prototyping, and clean builds for the web and the app stores.
-    No buzzwords, just clear deliverables and steady communication.</p>
+        turn ideas into validated products—design, prototyping, and clean builds for the web and the app stores.
+        No buzzwords, just clear deliverables and steady communication.</p>
 
-     <p><strong>Next step:</strong> use the contact form or the “Book a call” button—tell me what you’re trying to achieve.</p>
+        <p><strong>Next step:</strong> use the contact form or the “Book a call” button—tell me what you’re trying to achieve.</p>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-       <p> · Based in Oslo, available remote.</p>
-        <form action="https://formspree.io/f/yourid" method="POST" class="contact-form">
+        <p>Based in Oslo, available remote.</p>
+
+        <!-- ✅ Formspree-powered contact form -->
+        <!-- 1) Sign up at formspree.io -->
+        <!-- 2) Replace <YOUR_FORM_ID> below with your real Formspree form ID -->
+        <form id="contactForm"
+              action=https://formspree.io/f/xeoloorz
+              method="POST"
+              class="contact-form"
+              novalidate>
           <div class="grid">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="_replyto" placeholder="Email" required>
+            <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+            <!-- Formspree prefers 'email' as the field name -->
+            <input type="email" name="email" placeholder="Email" autocomplete="email" required>
           </div>
+
           <textarea name="message" placeholder="How can I help?" rows="5" required></textarea>
+
+          <!-- Optional extras -->
+          <input type="hidden" name="_subject" value="New inquiry from Huse Labs">
+          <!-- Honeypot (spam trap). Keep it hidden. -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
           <button type="submit" class="btn btn-primary">Send</button>
+          <p id="formStatus" aria-live="polite" style="margin-top:8px;"></p>
         </form>
       </div>
     </section>
